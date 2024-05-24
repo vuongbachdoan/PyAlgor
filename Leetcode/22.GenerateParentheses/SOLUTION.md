@@ -21,12 +21,12 @@ Chuỗi kết quả không được chứa ngoặc đóng trước ngoặc mở.
 
 ##### Hàm đệ quy `backtrack(s, left, right)`:
 
-- **Điều kiện dừng**:
+**Điều kiện dừng**:
 
-Nếu độ dài chuỗi s bằng 2 * n, tức là đã sử dụng hết tất cả các cặp ngoặc, thêm chuỗi s vào danh sách kết quả.
+- Nếu độ dài chuỗi s bằng 2 * n, tức là đã sử dụng hết tất cả các cặp ngoặc, thêm chuỗi s vào danh sách kết quả.
 
-- **Điều kiện tiếp tục**:
+**Điều kiện tiếp tục**:
 
-Nếu số lượng ngoặc mở (left) nhỏ hơn n, thêm ngoặc mở "(" vào chuỗi s và tăng left lên 1. Gọi đệ quy backtrack với chuỗi mới và các giá trị cập nhật.
+- Nếu số lượng ngoặc mở (left) nhỏ hơn n, thêm ngoặc mở "(" vào chuỗi s và tăng left lên 1. Gọi đệ quy backtrack với chuỗi mới và các giá trị cập nhật.
 
-Nếu số lượng ngoặc đóng (right) nhỏ hơn left, tức là chuỗi vẫn hợp lệ, thêm ngoặc đóng ")" vào chuỗi s và tăng right lên 1. Gọi đệ quy backtrack với chuỗi mới và các giá trị cập nhật.
+- Nếu số lượng ngoặc đóng (right) nhỏ hơn left, tức là chuỗi vẫn hợp lệ, thêm ngoặc đóng ")" vào chuỗi s và tăng right lên 1. Gọi đệ quy backtrack với chuỗi mới và các giá trị cập nhật.
